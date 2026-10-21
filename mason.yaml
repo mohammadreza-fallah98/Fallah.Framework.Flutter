@@ -1,0 +1,9 @@
+bricks:
+  app:
+    path: bricks/app
+  feature:
+    path: bricks/feature
+  api_service:
+    path: bricks/api_service
+  base_features:
+    path: bricks/base_features

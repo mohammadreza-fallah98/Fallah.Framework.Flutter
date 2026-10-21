@@ -1,0 +1,5 @@
+{
+  "FLAVOR": "prd",
+  "API_BASE_URL": "{{api_base_url_prd}}",
+  "ENABLE_LOGGING": "false"
+}

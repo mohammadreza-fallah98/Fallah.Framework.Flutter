@@ -1,0 +1,20 @@
+name: api_service
+description: Read-only API slice (datasource, model, entity, repository, usecases + test) without UI. Use for data needed by other features; upgrade to the full `feature` brick when a screen is needed.
+version: 0.1.0
+
+environment:
+  mason: ^0.1.0
+
+vars:
+  name:
+    type: string
+    description: Resource name, singular (e.g. province)
+    prompt: Resource name (singular, e.g. province)
+  plural:
+    type: string
+    description: Plural of the resource name (e.g. provinces)
+    prompt: Plural form (e.g. provinces)
+  package:
+    type: string
+    description: Dart package name of the target app (pubspec name)
+    prompt: App package name (pubspec name)

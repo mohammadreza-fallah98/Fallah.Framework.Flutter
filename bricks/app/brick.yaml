@@ -1,0 +1,46 @@
+name: app
+description: New Flutter app on the Fallah framework - flavors, Riverpod bootstrap, Dio with auth refresh, go_router with auth guard, fa/en l10n (RTL), tests.
+version: 0.1.0
+
+environment:
+  mason: ^0.1.0
+
+vars:
+  project_name:
+    type: string
+    description: Dart package name (snake_case)
+    prompt: Project name (snake_case, e.g. my_app)
+  description:
+    type: string
+    description: One-line description
+    default: A Flutter app built on the Fallah framework.
+    prompt: Description
+  framework_git_url:
+    type: string
+    description: Git URL of the Fallah framework repository
+    prompt: Fallah framework git URL
+  framework_ref:
+    type: string
+    description: Framework tag/branch to depend on
+    default: v0.1.0
+    prompt: Framework ref (tag)
+  api_base_url_dev:
+    type: string
+    description: API base URL for dev (include /api/v1)
+    default: https://dev-api.example.com/api/v1
+    prompt: Dev API base URL
+  api_base_url_stg:
+    type: string
+    description: API base URL for stg (include /api/v1)
+    default: https://stg-api.example.com/api/v1
+    prompt: Stg API base URL
+  api_base_url_prd:
+    type: string
+    description: API base URL for prd (include /api/v1)
+    default: https://api.example.com/api/v1
+    prompt: Prd API base URL
+  android_maven_mirror:
+    type: boolean
+    description: Add Aliyun Maven mirrors to the Android Gradle repositories (for networks where dl.google.com is blocked)
+    default: true
+    prompt: Use Aliyun Maven mirrors for Android builds (blocked Google Maven)?

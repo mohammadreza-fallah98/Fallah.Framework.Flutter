@@ -1,0 +1,100 @@
+name: {{project_name.snakeCase()}}
+description: {{description}}
+publish_to: none
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.8.0
+  flutter: ">=3.27.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.2
+  flutter_riverpod: ^3.0.0
+  riverpod_annotation: ^3.0.0
+  go_router: ^14.6.0
+  dio: ^5.7.0
+  freezed_annotation: ^3.0.0
+  json_annotation: ^4.9.0
+  file_picker: ^13.0.0
+  flutter_secure_storage: ^11.0.0
+  shared_preferences: ^2.3.0
+  url_launcher: ^6.3.0
+  fallah_core:
+    git:
+      url: {{framework_git_url}}
+      ref: {{framework_ref}}
+      path: packages/fallah_core
+  fallah_network:
+    git:
+      url: {{framework_git_url}}
+      ref: {{framework_ref}}
+      path: packages/fallah_network
+  fallah_api:
+    git:
+      url: {{framework_git_url}}
+      ref: {{framework_ref}}
+      path: packages/fallah_api
+  fallah_auth:
+    git:
+      url: {{framework_git_url}}
+      ref: {{framework_ref}}
+      path: packages/fallah_auth
+  fallah_ui:
+    git:
+      url: {{framework_git_url}}
+      ref: {{framework_ref}}
+      path: packages/fallah_ui
+
+# The framework packages depend on each other by version; point those
+# dependencies at the same git source until they are published to a pub server.
+dependency_overrides:
+  fallah_core:
+    git:
+      url: {{framework_git_url}}
+      ref: {{framework_ref}}
+      path: packages/fallah_core
+  fallah_network:
+    git:
+      url: {{framework_git_url}}
+      ref: {{framework_ref}}
+      path: packages/fallah_network
+  fallah_api:
+    git:
+      url: {{framework_git_url}}
+      ref: {{framework_ref}}
+      path: packages/fallah_api
+  fallah_auth:
+    git:
+      url: {{framework_git_url}}
+      ref: {{framework_ref}}
+      path: packages/fallah_auth
+  fallah_ui:
+    git:
+      url: {{framework_git_url}}
+      ref: {{framework_ref}}
+      path: packages/fallah_ui
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.4.13
+  freezed: ^3.0.0
+  json_serializable: ^6.9.0
+  riverpod_generator: ^3.0.0
+  mocktail: ^1.0.4
+  very_good_analysis: ^7.0.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+  # Add the Persian font (default family: Vazirmatn), e.g.
+  # fonts:
+  #   - family: Vazirmatn
+  #     fonts:
+  #       - asset: assets/fonts/Vazirmatn-Regular.ttf
+  #       - asset: assets/fonts/Vazirmatn-Bold.ttf
+  #         weight: 700

@@ -1,0 +1,16 @@
+name: fallah_network
+description: Dio client, interceptors (auth refresh, language, correlation, retry, logging) and error mapping for Fallah apps.
+version: 0.1.0
+publish_to: none
+resolution: workspace
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  dio: ^5.7.0
+  fallah_core: ^0.1.0
+
+dev_dependencies:
+  test: ^1.25.0
+  very_good_analysis: ^7.0.0

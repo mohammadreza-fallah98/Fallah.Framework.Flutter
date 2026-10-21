@@ -1,0 +1,28 @@
+include: package:very_good_analysis/analysis_options.yaml
+
+analyzer:
+  exclude:
+    - bricks/**
+    - _verify/**
+  language:
+    strict-casts: true
+    strict-raw-types: true
+
+linter:
+  rules:
+    # Framework code is documented where it matters; don't force a doc comment
+    # on every member.
+    public_member_api_docs: false
+    # Failure is thrown on purpose: datasources throw it, apiCall() catches it.
+    only_throw_errors: false
+    # Single-method interfaces (AppLogger, repositories) are intentional.
+    one_member_abstracts: false
+    # Failure.toString is for logs only.
+    no_runtimetype_tostring: false
+    # Fluent requireSuccess() on ApiListResponse.
+    avoid_returning_this: false
+    # Widget APIs read better with key params grouped by meaning.
+    always_put_required_named_parameters_first: false
+    # Package imports and relative imports are both used within a package.
+    prefer_relative_imports: false
+    always_use_package_imports: false

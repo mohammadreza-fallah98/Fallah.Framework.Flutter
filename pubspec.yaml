@@ -1,0 +1,12 @@
+name: fallah_workspace
+publish_to: none
+
+environment:
+  sdk: ^3.6.0
+
+workspace:
+  - packages/fallah_core
+  - packages/fallah_network
+  - packages/fallah_auth
+  - packages/fallah_api
+  - packages/fallah_ui

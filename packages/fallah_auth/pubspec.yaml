@@ -1,0 +1,16 @@
+name: fallah_auth
+description: Session management, permissions, router-agnostic auth guard and secure token storage contracts for Fallah apps.
+version: 0.1.0
+publish_to: none
+resolution: workspace
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  fallah_core: ^0.1.0
+  fallah_network: ^0.1.0
+
+dev_dependencies:
+  test: ^1.25.0
+  very_good_analysis: ^7.0.0

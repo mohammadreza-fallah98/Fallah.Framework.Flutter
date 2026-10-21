@@ -1,0 +1,5 @@
+{
+  "FLAVOR": "dev",
+  "API_BASE_URL": "{{api_base_url_dev}}",
+  "ENABLE_LOGGING": "true"
+}

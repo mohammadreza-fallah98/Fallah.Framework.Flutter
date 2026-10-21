@@ -1,0 +1,20 @@
+name: feature
+description: Feature-first Clean Architecture slice (data / domain / presentation + tests) on the Fallah packages and Riverpod.
+version: 0.1.0
+
+environment:
+  mason: ^0.1.0
+
+vars:
+  name:
+    type: string
+    description: Feature name, singular (e.g. product)
+    prompt: Feature name (singular, e.g. product)
+  plural:
+    type: string
+    description: Plural of the feature name (e.g. products)
+    prompt: Plural form (e.g. products)
+  package:
+    type: string
+    description: Dart package name of the target app (pubspec name)
+    prompt: App package name (pubspec name)

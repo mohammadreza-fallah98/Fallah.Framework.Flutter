@@ -1,0 +1,15 @@
+name: fallah_core
+description: Pure Dart foundation for Fallah apps - Result, Failure, Logger, validators.
+version: 0.1.0
+publish_to: none
+resolution: workspace
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  shamsi_date: ^1.1.1
+
+dev_dependencies:
+  test: ^1.25.0
+  very_good_analysis: ^7.0.0

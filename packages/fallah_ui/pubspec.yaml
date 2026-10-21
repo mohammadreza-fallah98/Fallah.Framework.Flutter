@@ -1,0 +1,38 @@
+name: fallah_ui
+description: Design tokens, Material 3 theme (RTL/Persian-ready) and base widgets for Fallah apps.
+version: 0.1.0
+publish_to: none
+resolution: workspace
+
+environment:
+  sdk: ^3.6.0
+  flutter: ">=3.27.0"
+
+dependencies:
+  fallah_core: ^0.1.0
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  very_good_analysis: ^7.0.0
+
+flutter:
+  # Samim (SIL OFL 1.1, see assets/fonts/LICENSE-Samim.txt). Used as
+  # 'packages/fallah_ui/Samim'; the FD family renders Latin digits as Persian.
+  fonts:
+    - family: Samim
+      fonts:
+        - asset: assets/fonts/Samim.ttf
+        - asset: assets/fonts/Samim-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Samim-Bold.ttf
+          weight: 700
+    - family: SamimFD
+      fonts:
+        - asset: assets/fonts/Samim-FD.ttf
+        - asset: assets/fonts/Samim-Medium-FD.ttf
+          weight: 500
+        - asset: assets/fonts/Samim-Bold-FD.ttf
+          weight: 700
